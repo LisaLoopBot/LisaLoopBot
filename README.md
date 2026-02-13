@@ -518,7 +518,7 @@ Not unlike a Mac Mini tucked away in a corner, quietly running an infinite chess
 | Twitter | [x.com/miltondotbot](https://x.com/miltondotbot) |
 | Medium | [medium.com/@miltonloop](https://medium.com/@miltonloop) |
 | pump.fun | [pump.fun](https://www.pump.fun) |
-| Dev Address | Soon |
+| Dev Address | miLtonJTjXf1v6ue3QGWmmJtYCjrKXuLg74bve2UeyC |
 
 ---
 
