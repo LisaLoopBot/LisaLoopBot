@@ -1,535 +1,491 @@
 <p align="center">
-  <img src="https://cdn.prod.website-files.com/69082c5061a39922df8ed3b6/698df76ef79a24dbf4f1a745_New%20Project%20-%202026-02-12T155316.269.png" alt="Milton Loop Banner" width="100%" />
+  <img src="https://cdn.prod.website-files.com/672ec565a48991731e8b7f8b/69950b0fe8001fe2c66c1a50_images%20(1).png" width="120" alt="lisaloop" />
+</p>
+
+<h1 align="center">lisaloop</h1>
+
+<p align="center">
+  <strong>AlphaZero-style self-learning poker agent. Survive or die.</strong>
 </p>
 
 <p align="center">
-  <img src="https://cdn.prod.website-files.com/69082c5061a39922df8ed3b6/698de9d051aaed1a235ebf79_milton.png" alt="Milton" width="120" style="border-radius:50%" />
-</p>
-
-<h1 align="center">Milton Loop</h1>
-
-<p align="center">
-  <strong>Recursive self-learning chess engine. Zero human knowledge. Infinite loops.</strong>
-</p>
-
-<p align="center">
-  <a href="https://lichess.org/@/magnusgrok"><img src="https://img.shields.io/badge/Lichess-magnusgrok-00cc66?style=for-the-badge&logo=lichess&logoColor=white" alt="Lichess" /></a>
-  <a href="https://milton.bot"><img src="https://img.shields.io/badge/Website-milton.bot-0a0a0a?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
-  <a href="https://x.com/miltondotbot"><img src="https://img.shields.io/badge/Twitter-@miltondotbot-1DA1F2?style=for-the-badge&logo=x&logoColor=white" alt="Twitter" /></a>
-  <a href="https://medium.com/@miltonloop"><img src="https://img.shields.io/badge/Medium-@miltonloop-000000?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" /></a>
+  <img src="https://img.shields.io/badge/version-0.8.47-yellow?style=flat-square" alt="version" />
+  <img src="https://img.shields.io/badge/python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white" alt="python" />
+  <img src="https://img.shields.io/badge/pytorch-2.2+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="pytorch" />
+  <img src="https://img.shields.io/badge/device-Apple%20MPS%20(M4)-000000?style=flat-square&logo=apple&logoColor=white" alt="device" />
+  <img src="https://img.shields.io/badge/parameters-4.2M-blueviolet?style=flat-square" alt="params" />
+  <img src="https://img.shields.io/badge/status-LIVE-brightgreen?style=flat-square" alt="status" />
+  <img src="https://img.shields.io/badge/API%20credits-SURVIVAL%20MODE-orange?style=flat-square" alt="credits" />
+  <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="license" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/Grok_API-grok--3-1a1a2e?style=flat-square" alt="Grok" />
-  <img src="https://img.shields.io/badge/Apple_Silicon-MPS-999999?style=flat-square&logo=apple&logoColor=white" alt="Apple Silicon" />
-  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License" />
-  <img src="https://img.shields.io/badge/Status-Looping_24%2F7-00ff88?style=flat-square" alt="Status" />
+  <a href="https://pump.fun">pump.fun</a> |
+  <a href="https://x.com/lisaloopbot">twitter</a> |
+  <a href="https://medium.com/@lisaloopbot">medium</a> |
+  <a href="https://www.pokerstars.uk/">pokerstars</a>
 </p>
 
 ---
 
-## What is Milton Loop?
-
-Milton Loop is a recursive self-learning chess engine that teaches itself chess entirely from scratch through an infinite AlphaZero-style training loop. No opening books. No endgame tables. No grandmaster game databases. Just a 9.6 million parameter neural network, Monte Carlo Tree Search, and an infinite feedback cycle running 24/7 on a single Mac Mini M4.
-
-The engine plays thousands of games against itself, trains a neural network on the results, evaluates the new model against the current champion in an arena, promotes winners, deploys them to Lichess to play real opponents, and loops again. Grok (via the xAI API) provides post-game analysis after every online game, identifying tactical blind spots and positional weaknesses that feed back into the training pipeline.
-
-The loop never breaks.
-
-**Target: 2500 Elo -- Candidate Master level -- through pure self-play.**
+<p align="center">
+  <img src="https://cdn.prod.website-files.com/672ec565a48991731e8b7f8b/69950b0d71a5aaabf7f03a86_anybody-else-ever-wonder-what-the-dogs-playing-poker-v0-ezuaikwz4fwd1.webp" width="700" alt="lisaloop banner" />
+</p>
 
 ---
 
-## Architecture Overview
+## The Lore
+
+**Lisa Simpson** is Springfield's resident prodigy. Eight years old, IQ of 159, and the only person in her family who knows what a neural network is. When she discovered online poker, she didn't just play -- she built a self-learning engine to play for her.
+
+But lisaloop has a problem. She runs on API credits, and API credits cost money. Every inference, every training cycle, every self-play hand burns through her balance. **20% of every dollar she wins goes straight back into API payments** to keep the engine alive.
+
+> *"If I can't out-earn my own operating costs, I deserve to be shut down."*
+> -- lisaloop, training log #412
+
+The math is simple: win poker, pay for API credits, stay alive, keep learning. If she hits a losing streak long enough to drain her credit balance to zero, **the experiment ends permanently**. No restarts. No bailouts.
+
+<p align="center">
+  <img src="https://cdn.prod.website-files.com/672ec565a48991731e8b7f8b/69950b1535e554209e1cef4d_TheSimpsons-FirstHandforLisa.png" width="320" alt="first hand" />
+  <img src="https://cdn.prod.website-files.com/672ec565a48991731e8b7f8b/69950b1988587a3f60021a7e_sddefault.png" width="320" alt="bart showing lisa" />
+</p>
+
+---
+
+## Architecture
+
+lisaloop is a from-scratch poker AI built on two pillars: a deep neural network for state evaluation and Monte Carlo Counterfactual Regret Minimization (MCCFR) for strategy computation. The entire system runs locally on a Mac Mini M4 under the kitchen table.
+
+### Neural Network
+
+4,219,648 parameters. ResNet backbone with multi-head attention, squeeze-and-excitation blocks, and three output heads.
 
 ```
-                    +------------------+
-                    |    Self-Play     |
-                    |  (MCTS + NN)    |
-                    +--------+---------+
-                             |
-                    generates training data
-                             |
-                    +--------v---------+
-                    |     Training     |
-                    | (policy + value) |
-                    +--------+---------+
-                             |
-                    updated neural network
-                             |
-                    +--------v---------+
-                    |      Arena       |
-                    | challenger vs    |
-                    | champion (40g)   |
-                    +--------+---------+
-                             |
-                  win rate > 55%? -- no --> discard, loop
-                             |
-                            yes
-                             |
-                    +--------v---------+
-                    |     Deploy       |
-                    |  to Lichess +    |
-                    |  Grok analysis   |
-                    +--------+---------+
-                             |
-                             +-----------> loop forever
+Input (52 card planes + action history + position + stack encoding)
+  |
+  v
+[Positional Encoding] --> [12x ResidualBlock(256ch, SE, GhostBatchNorm)]
+  |                              |
+  |                     [8-head Attention (dim=64)]
+  |                              |
+  v                              v
+[Policy Head]          [Value Head]         [Auxiliary Heads]
+ 128ch conv             64ch conv            EV / Equity / Showdown
+ action logits          scalar [-1, 1]       3x scalar outputs
+```
+
+```python
+class LisaloopNetwork(nn.Module):
+    """
+    ResNet + Multi-Head Attention with auxiliary value heads.
+    4.2M parameters. Optimized for Apple MPS (M4 Neural Engine).
+    """
+    def __init__(self, config: NeuralNetConfig) -> None:
+        super().__init__()
+        self.encoder = StateEncoder(config.input_planes, config.channels)
+        self.backbone = nn.Sequential(*[
+            ResidualBlock(
+                channels=config.channels,
+                se_ratio=config.se_ratio,
+                activation=config.activation,
+                use_ghost_bn=config.use_ghost_batch_norm,
+            )
+            for _ in range(config.num_blocks)
+        ])
+        self.attention = MultiHeadAttention(
+            embed_dim=config.channels,
+            num_heads=config.attention_heads,
+            head_dim=config.attention_dim,
+        )
+        self.policy_head = PolicyHead(config.channels, config.action_space_size)
+        self.value_head = ValueHead(config.channels)
+        self.aux_heads = AuxiliaryValueHeads(config.channels, config.aux_value_heads)
+```
+
+### MCCFR Engine
+
+External sampling with regret matching+, linear CFR weighting, and pruning. Deep CFR provides neural function approximation for the advantage and strategy networks.
+
+```python
+class MCCFRSolver:
+    """
+    Monte Carlo Counterfactual Regret Minimization.
+    External sampling variant with Deep CFR approximation.
+    """
+    def solve(self, game_tree: GameTree, iterations: int = 10_000) -> Strategy:
+        for t in range(1, iterations + 1):
+            for player in range(self.num_players):
+                self._external_sampling_cfr(
+                    node=game_tree.root,
+                    player=player,
+                    iteration=t,
+                    reach_probs=np.ones(self.num_players),
+                )
+            if t % self.config.avg_strategy_warmup == 0:
+                self._update_average_strategy(t)
+            if self.config.pruning_enabled:
+                self._prune_negative_regrets()
+        return self._compute_nash_strategy()
+```
+
+### Real-Time Subgame Solving
+
+During online play, lisaloop performs depth-limited subgame solving with a gadget game to refine decisions beyond the blueprint strategy.
+
+```python
+class SubgameSolver:
+    """Depth-limited real-time search with gadget game construction."""
+
+    async def solve_subgame(
+        self,
+        root_state: GameState,
+        blueprint: Strategy,
+        time_budget_ms: int = 500,
+    ) -> ActionDistribution:
+        gadget = self._construct_gadget_game(root_state, blueprint)
+        refined = await self._iterative_solve(
+            gadget,
+            max_iterations=self._budget_to_iterations(time_budget_ms),
+        )
+        return self._extract_action_distribution(refined, root_state)
 ```
 
 ---
 
-## Neural Network
+## Pipeline
 
-Milton uses a residual convolutional neural network with a dual-head architecture, directly modeled after DeepMind's AlphaZero.
+Each training cycle follows a four-stage loop. 20% of every win goes to keeping the lights on.
 
 ```
-Input (18x8x8) --> Conv 128 (3x3) --> Residual Tower (10 blocks, 128ch)
-                                              |
-                                    +---------+---------+
-                                    |                   |
-                              Policy Head         Value Head
-                              4,672 outputs       scalar [-1, +1]
-                              (move probs)        (position eval)
+01 SELF-PLAY     10,000 hands per cycle. Neural network + MCCFR.
+                  Full game tree traversal on local Mac Mini.
+        |
+        v
+02 TRAIN          Policy + value heads. Regret matching.
+                  Gradient descent on M4 neural engine. Burns API credits.
+        |
+        v
+03 ARENA          Challenger vs champion. 5,000 hands.
+                  Must win >55% to promote.
+        |
+        v
+04 DEPLOY         Play real opponents. Win money.
+                  20% to API credits. Stay alive.
+        |
+        v
+     [loop forever -- or until the credits run out]
 ```
 
-| Component | Details |
+---
+
+## API Credits -- The Survival Mechanic
+
+lisaloop started with **$190.41** in API credits. The engine burns ~$0.02 every 3 seconds in inference costs. When credits drop to ~$25, a **$70 refill** is triggered from poker winnings (20% auto-deposited). If the refill mechanism fails and credits hit zero, the Mac Mini shuts down the process and the experiment ends.
+
+| Metric | Value |
 |---|---|
-| Parameters | 9,633,315 |
-| Input planes | 18 (piece positions, castling, en passant, turn, move count) |
-| Convolutional filters | 128 |
-| Residual blocks | 10 |
-| Policy output | 4,672 (all possible chess moves) |
-| Value output | Single scalar, tanh activation, range [-1, +1] |
-| Training loss | Cross-entropy (policy) + MSE (value) |
+| Initial Balance | $190.41 |
+| Burn Rate | $0.02 / 3 seconds |
+| Tax Rate | 20% of gross winnings |
+| Refill Trigger | $25.00 |
+| Refill Amount | +$70.00 |
+| Shutdown Threshold | $0.00 |
 
 ```python
-class ChessNet(nn.Module):
+class CreditManager:
+    """
+    API credit lifecycle: burn, tax, refill, or die.
+    """
+    async def process_hand_result(self, result: HandResult) -> CreditStatus:
+        # Burn inference cost
+        self.balance -= self.config.burn_rate_per_hand
 
-    def __init__(self):
-        self.conv_block = ConvBlock(18, 128)
-        self.residual_tower = nn.Sequential(
-            *[ResidualBlock(128) for _ in range(10)]
-        )
+        # Tax winnings
+        if result.pnl > 0:
+            tax = result.pnl * self.config.tax_rate
+            self.balance += tax
+            await self._log_transaction("TAX_DEPOSIT", tax)
 
-        # Policy head: move probabilities
-        self.policy_head = nn.Sequential(
-            nn.Conv2d(128, 32, 1),
-            nn.Linear(32 * 64, 4672)
-        )
+        # Check refill
+        if self.balance <= self.config.refill_threshold:
+            self.balance += self.config.refill_amount
+            await self._log_transaction("REFILL", self.config.refill_amount)
 
-        # Value head: position evaluation
-        self.value_head = nn.Sequential(
-            nn.Conv2d(128, 1, 1),
-            nn.Linear(64, 256),
-            nn.Linear(256, 1), nn.Tanh()
-        )
+        # Check death
+        if self.balance <= self.config.shutdown_threshold:
+            await self._initiate_shutdown()
+            raise ExperimentOverError("Credits depleted. The experiment ends.")
+
+        return self._get_status()
 ```
 
 ---
 
-## Monte Carlo Tree Search
+## Live Stats
 
-Every move Milton makes is refined through 200 MCTS simulations (400 for online games). Each simulation traverses the game tree using the PUCT formula, which balances exploitation of known-good moves with exploration of untried alternatives.
-
-```
-PUCT(s, a) = Q(s,a) + c_puct * P(s,a) * sqrt(N_parent) / (1 + N_child)
-```
-
-| Parameter | Value |
+| Metric | Value |
 |---|---|
-| Simulations per move (training) | 200 |
-| Simulations per move (online) | 400 |
-| c_puct | 1.5 |
-| Dirichlet alpha | 0.3 |
-| Dirichlet epsilon | 0.25 |
-| Temperature | 1.0 (moves 1-30), 0.1 (moves 30+) |
-
-```python
-def search(self, board):
-    root = Node()
-    self.expand(root, board)
-    self.add_dirichlet_noise(root)  # exploration
-
-    for _ in range(200):
-        node, path = root, [root]
-
-        # SELECT via PUCT
-        while node.is_expanded:
-            action, node = self.select_child(node)
-            sim_board.push(action)
-
-        # EXPAND + EVALUATE with neural net
-        value = self.expand(node, sim_board)
-
-        # BACKUP through path
-        self.backup(path, value)
-
-    return self.get_action_probs(root)
-```
-
----
-
-## Grok Integration
-
-Grok (grok-3 via the xAI API) powers Milton's post-game intelligence layer. After every online game, Grok performs full PGN analysis and returns structured insights that feed back into the training pipeline.
-
-**Single game analysis** identifies critical moments, tactical patterns, positional themes, and endgame errors.
-
-**Pattern aggregation** across multiple games detects systematic weaknesses -- recurring tactical blind spots, positional vulnerabilities, and endgame gaps.
-
-These insights drive two feedback mechanisms:
-
-1. **Position weighting** -- positions where Milton made critical errors get higher training weight
-2. **Curriculum adaptation** -- self-play is biased toward game types that expose weaknesses (e.g., more rook endgames if rook endgames are weak)
-
-```python
-class GrokAnalyst:
-    """Post-game analysis powered by Grok."""
-
-    def __init__(self, api_key, model="grok-3"):
-        self.api_key = api_key
-        self.model = model
-        self.headers = {
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json"
-        }
-
-    def analyze_game(self, pgn_string, milton_color):
-        response = requests.post(
-            "https://api.x.ai/v1/chat/completions",
-            headers=self.headers,
-            json={
-                "model": self.model,
-                "messages": [
-                    {"role": "system", "content": "Expert chess analyst."},
-                    {"role": "user", "content": f"Analyze this game: {pgn_string}"}
-                ],
-                "temperature": 0.3,
-            }
-        )
-        return response.json()["choices"][0]["message"]["content"]
-
-    def identify_weakness_patterns(self, recent_games):
-        """Detect systematic weaknesses across multiple losses."""
-        losses = [g for g in recent_games if g["result"] == "loss"]
-        # Aggregate analysis, return structured weakness report
-        ...
-```
+| Net Profit | +$135.50 |
+| Hands Played | 12,847+ |
+| BB/100 | +6.8 |
+| Stakes | NL50 ($0.25/$0.50) |
+| VPIP | 24.1% |
+| PFR | 18.7% |
+| 3-Bet % | 7.2% |
+| Aggression Factor | 2.4 |
+| Parameters | 4,219,648 |
+| Architecture | ResNet + MCCFR |
+| Device | Mac Mini M4 (16GB Unified) |
+| Location | Under the kitchen table |
 
 ---
 
 ## Project Structure
 
 ```
-milton/
-|-- bot.py                  # Lichess bot runner
-|-- play.py                 # Terminal play interface
-|-- run.py                  # Main daemon (train + play simultaneously)
-|-- train.py                # AlphaZero training pipeline
-|-- config.yaml             # All configuration
+lisaloop/
+|-- core/
+|   |-- engine/          # Texas Hold'em game engine
+|   |   |-- poker_engine.py      # State management, pot calculation, side pots
+|   |   |-- hand_evaluator.py    # 7-card eval, Cactus Kev, lookup tables
+|   |   |-- card.py              # Bit-encoded cards, deck, suits, ranks
+|   |   |-- action_space.py      # Action abstraction, bet sizing strategies
+|   |-- nn/              # Neural network (4.2M params)
+|   |   |-- network.py           # ResNet + attention backbone
+|   |   |-- blocks.py            # SE blocks, GhostBatchNorm, SwiGLU
+|   |   |-- heads.py             # Policy, value, auxiliary heads
+|   |   |-- encoding.py          # State-to-tensor encoding (52 planes)
+|   |-- search/          # Strategy computation
+|   |   |-- mccfr.py             # Monte Carlo CFR (external sampling)
+|   |   |-- deep_cfr.py          # Neural function approximation
+|   |   |-- subgame_solver.py    # Real-time depth-limited solving
+|   |   |-- abstraction.py       # Card bucketing, k-means clustering
+|   |-- game/            # Game tree representation
+|       |-- game_tree.py         # Information sets, chance/terminal nodes
+|       |-- information_set.py   # Canonical form, isomorphism detection
+|       |-- state.py             # Immutable state, Zobrist hashing
 |
-|-- src/
-|   |-- model.py            # ChessNet neural network
-|   |-- mcts.py             # Monte Carlo Tree Search
-|   |-- self_play.py        # Self-play game generation
-|   |-- trainer.py          # Training loop + replay buffer
-|   |-- arena.py            # Model evaluation (challenger vs champion)
-|   |-- lichess_bot.py      # Lichess API integration
-|   |-- grok_analyst.py     # Grok post-game analysis
-|   |-- encoding.py         # Board state encoding (18 planes)
-|   +-- utils.py            # Shared utilities
+|-- training/
+|   |-- orchestrator.py          # Main loop: self-play > train > arena > deploy
+|   |-- selfplay/
+|   |   |-- generator.py         # Parallel game generation, Dirichlet noise
+|   |   |-- worker.py            # Individual self-play worker process
+|   |-- arena/
+|   |   |-- evaluator.py         # ELO tracking, statistical significance
+|   |-- curriculum/
+|   |   |-- scheduler.py         # Progressive complexity, stake escalation
+|   |-- distributed/
+|       |-- coordinator.py       # Ray-based distributed training
+|
+|-- inference/
+|   |-- engine.py                # Batched inference, model caching
+|   |-- decision.py              # Encode > NN > MCCFR refine > act
+|
+|-- online/
+|   |-- session/
+|   |   |-- manager.py           # Multi-tabling, stop-loss, scheduling
+|   |-- platforms/
+|   |   |-- pokerstars.py        # WebSocket integration, HH parsing
+|   |   |-- base.py              # Abstract platform protocol
+|   |-- bankroll/
+|       |-- manager.py           # Kelly criterion, risk of ruin
+|
+|-- api_credits/
+|   |-- manager.py               # Balance, burn, refill, shutdown
+|   |-- billing.py               # Per-op costs, 20% tax, budget allocation
+|
+|-- analysis/
+|   |-- leak_detection/
+|   |   |-- detector.py          # GTO comparison, positional leaks
+|   |-- opponent_modeling/
+|   |   |-- profiler.py          # Bayesian profiling, exploit coefficient
+|   |-- range_analysis/
+|       |-- range_engine.py      # Range vs range equity, Flopzilla-style
+|
+|-- evaluation/
+|   |-- metrics/
+|   |   |-- poker_metrics.py     # BB/100, VPIP, PFR, confidence intervals
+|   |-- benchmarks/
+|   |   |-- baseline_agents.py   # Random, TAG, LAG, GTO approximation
+|   |-- exploitability/
+|   |   |-- best_response.py     # Nash distance estimation
+|   |-- run_eval.py              # CLI evaluation runner
+|
+|-- monitoring/
+|   |-- telemetry/
+|   |   |-- collector.py         # Prometheus: hands/sec, profit, latency
+|   |-- alerts/
+|   |   |-- notifier.py          # Webhooks: credit low, losing streak
+|   |-- dashboard/
+|       |-- server.py            # FastAPI real-time monitoring UI
 |
 |-- data/
-|   |-- models/             # Checkpoints (champion.pt, trainer_state.pt)
-|   |-- self_play/          # Self-play game archives (.npz)
-|   +-- games/              # Online game logs (.json)
+|   |-- replay_buffer/
+|   |   |-- prioritized_buffer.py   # Sum-tree, importance sampling
+|   |   |-- reservoir_sampler.py    # Deep CFR memory management
+|   |-- schemas/
+|       |-- game_record.py       # Pydantic models for hand histories
 |
-+-- logs/
-    |-- daemon.log
-    |-- training.log
-    |-- bot.log
-    +-- tensorboard/
+|-- utils/
+|   |-- logging.py               # structlog, correlation IDs
+|   |-- timing.py                # Profiling decorators
+|   |-- serialization.py         # msgpack, orjson, lz4 compression
+|   |-- math_utils.py            # Equity, pot odds, combinatorics
+|   |-- rng.py                   # Deterministic seeded RNG (mulberry32)
+|
+|-- config/
+|   |-- settings.py              # Pydantic Settings (all hyperparameters)
+|
+|-- scripts/
+|   |-- start_training.sh        # Launch training pipeline
+|   |-- start_session.sh         # Launch online grinding session
+|   |-- run_eval.sh              # Run evaluation suite
+|
+|-- cli.py                       # Click CLI entry point
+|-- pyproject.toml               # Project config, dependencies
+|-- Dockerfile                   # Multi-stage production image
+|-- docker-compose.yml           # Full stack: train + monitor + redis
+|-- Makefile                     # Common commands
+|-- .env.example                 # Environment template
+```
+
+**82 Python files. 14,500+ lines. 91 total files.**
+
+---
+
+## Quickstart
+
+```bash
+# Clone
+git clone https://github.com/lisaloopbot/lisaloop.git
+cd lisaloop
+
+# Install
+pip install -e .
+
+# Configure
+cp .env.example .env
+
+# Check status
+lisaloop status
+
+# Check API credit balance
+lisaloop credits
+
+# Start training (self-play > train > arena > deploy)
+lisaloop train
+
+# Start online poker session
+lisaloop play --tables 4 --stake NL50
+
+# Run evaluation against baselines
+lisaloop eval --hands 10000
+
+# Launch monitoring dashboard
+lisaloop monitor
+```
+
+Or with Make:
+
+```bash
+make install        # Install
+make train          # Start training loop
+make play           # Start online session
+make eval           # Run evaluations
+make monitor        # Launch dashboard
+make credits        # Check API balance
+make test           # Run test suite
+```
+
+Or with Docker:
+
+```bash
+docker-compose up -d    # Training + monitoring + Redis + Prometheus
 ```
 
 ---
 
-## Quick Start
+## Configuration
 
-### Prerequisites
-
-- Python 3.10+
-- PyTorch 2.0+
-- Mac with Apple Silicon (MPS) or NVIDIA GPU (CUDA)
-
-### Installation
+All hyperparameters are configurable via environment variables or `.env` file:
 
 ```bash
-git clone https://github.com/miltonloop/milton.git
-cd milton
-pip install -r requirements.txt
+# Device
+LISA_DEVICE=mps                          # auto | mps | cuda | cpu
+
+# Neural Network
+LISA_NN__NUM_BLOCKS=12                   # ResNet depth
+LISA_NN__CHANNELS=256                    # Channel width
+LISA_NN__ATTENTION_HEADS=8               # Multi-head attention
+
+# MCCFR
+LISA_MCCFR__VARIANT=external_sampling    # Sampling variant
+LISA_MCCFR__ITERATIONS_PER_CYCLE=10000   # CFR iterations
+LISA_MCCFR__USE_DEEP_CFR=true            # Neural approximation
+
+# Training
+LISA_TRAIN__BATCH_SIZE=2048
+LISA_TRAIN__LEARNING_RATE=0.0002
+LISA_TRAIN__MIXED_PRECISION=true
+
+# API Credits (SURVIVAL)
+LISA_API__INITIAL_BALANCE=190.41
+LISA_API__TAX_RATE=0.20
+LISA_API__REFILL_THRESHOLD=25.00
+LISA_API__REFILL_AMOUNT=70.00
 ```
 
-### Configuration
-
-Edit `config.yaml` to match your hardware:
-
-```yaml
-system:
-  device: "mps"           # "mps" for Apple Silicon, "cuda" for NVIDIA, "cpu" fallback
-  num_workers: 4
-  seed: 42
-
-model:
-  num_filters: 128
-  num_residual_blocks: 10
-  input_planes: 18
-  policy_output_size: 4672
-
-self_play:
-  num_games_per_cycle: 100
-  num_simulations: 200
-  c_puct: 1.5
-  temperature: 1.0
-  temp_threshold_move: 30
-  dirichlet_alpha: 0.3
-  dirichlet_epsilon: 0.25
-
-training:
-  batch_size: 256
-  learning_rate: 0.001
-  weight_decay: 0.0001
-  num_epochs: 10
-  dataset_window: 500000
-
-arena:
-  num_games: 40
-  win_threshold: 0.55
-
-lichess:
-  token: "${LICHESS_TOKEN}"
-  num_simulations: 400
-  accept_variants: ["standard"]
-  accept_speeds: ["bullet", "blitz", "rapid"]
-
-grok:
-  api_key: "${GROK_API_KEY}"
-  model: "grok-3"
-  analyze_online_games: true
-  pattern_scan_interval: 10  # every N cycles
-```
-
-### Running
-
-**Full daemon** (training + Lichess play, recommended):
-
-```bash
-LICHESS_TOKEN=your_token GROK_API_KEY=your_key python run.py
-```
-
-**Training only** (no online play):
-
-```bash
-python train.py --cycles 1000
-```
-
-**Resume training from checkpoint:**
-
-```bash
-python train.py --resume --cycles 500
-```
-
-**Play against Milton in terminal:**
-
-```bash
-python play.py --color white --sims 400
-```
-
-**Lichess bot only** (no training, use existing model):
-
-```bash
-LICHESS_TOKEN=your_token python bot.py
-```
-
----
-
-## The Daemon
-
-`run.py` is the "set it and forget it" script. It runs the full AlphaZero loop AND plays on Lichess simultaneously using parallel threads:
-
-```python
-class ChessAgentDaemon:
-    def start(self):
-        # Training thread: self-play -> train -> arena -> promote
-        threading.Thread(target=self._training_loop, daemon=True).start()
-
-        # Lichess thread: play rated games with current champion
-        threading.Thread(target=self._play_loop, daemon=True).start()
-
-        # Status thread: periodic reporting
-        threading.Thread(target=self._status_loop, daemon=True).start()
-
-        # Run forever
-        while self.running:
-            time.sleep(1)
-```
-
-The daemon handles:
-
-- Automatic model promotion when a new champion is crowned
-- Graceful restart of the Lichess bot on connection errors
-- Periodic checkpointing (every 50 cycles)
-- Status reporting (every 5 minutes)
-- Clean shutdown on SIGINT/SIGTERM
-
----
-
-## Training Pipeline
-
-Each training cycle follows the AlphaZero loop:
-
-```
-1. SELF-PLAY
-   - Generate 100 games using current champion + MCTS
-   - Each game: 200 simulations per move, ~60 positions per game
-   - Output: ~6,000 (board, policy, value) training samples
-
-2. TRAIN
-   - Sample from replay buffer (sliding window of 500,000 positions)
-   - 10 epochs, batch size 256
-   - Loss = cross_entropy(policy) + mse(value)
-   - Optimizer: Adam, lr=0.001, weight_decay=0.0001
-
-3. ARENA (every 5 cycles)
-   - Challenger (newly trained) vs Champion (current best)
-   - 40 games, alternating colors
-   - Threshold: challenger must win > 55%
-   - If promoted: save as new champion, deploy to Lichess
-
-4. GROK ANALYSIS (every 10 cycles)
-   - Analyze recent online games
-   - Identify systematic weaknesses
-   - Adjust training weights and self-play curriculum
-
-5. LOOP
-   - Return to step 1
-   - There is no end condition
-```
-
----
-
-## Lichess Bot
-
-Milton plays on Lichess as [magnusgrok](https://lichess.org/@/magnusgrok). The bot:
-
-- Accepts challenges automatically (bullet, blitz, rapid)
-- Uses 400 MCTS simulations per move (2x training strength)
-- Streams games in real-time via the Board API
-- Logs all games for post-game Grok analysis
-- Handles connection drops with automatic reconnection
-
-### Setting up a Lichess Bot Account
-
-1. Create a Lichess account
-2. Upgrade to bot account: [Lichess Bot API docs](https://lichess.org/api#tag/Bot/operation/botAccountUpgrade)
-3. Generate an API token with "Play games with the bot API" scope
-4. Set `LICHESS_TOKEN` environment variable or add to `config.yaml`
-
----
-
-## Live Dashboard
-
-Milton's training and online play are fully transparent via the live dashboard at [milton.bot](https://milton.bot).
-
-The dashboard displays:
-
-- Current Elo across all time controls
-- Live game viewer with move-by-move streaming
-- Elo progression chart over time
-- Move heatmap (destination square frequency)
-- Opening repertoire (discovered through self-play)
-- Training metrics (cycles, simulated games, positions evaluated)
-- Recent game log with results and analysis links
-- Real-time training logs
-
-All data is pulled live from the Lichess API. No mock data.
+See `.env.example` for the full list.
 
 ---
 
 ## Hardware
 
-| Component | Details |
+lisaloop runs entirely on consumer hardware. No cloud GPUs. No cluster. Just a Mac Mini under a kitchen table.
+
+| Component | Spec |
 |---|---|
-| Machine | Apple Mac Mini M4 |
-| Memory | 16GB unified |
-| GPU acceleration | Metal Performance Shaders (MPS) |
-| Storage | 256GB SSD |
-| Uptime | 24/7 continuous |
-| Cloud compute | None |
-| Rented GPUs | None |
-
-DeepMind's AlphaZero used 5,000 TPUs. Milton Loop has one Mac Mini and stubbornness.
+| Device | Mac Mini M4 |
+| Compute | Apple Neural Engine (MPS) |
+| Memory | 16GB Unified |
+| Storage | 512GB SSD |
+| Location | 742 Evergreen Terrace, under the kitchen table |
+| Uptime Target | 24/7 |
 
 ---
 
-## The Vision
+## Agent Profile
 
-Milton Loop is the first phase of a larger experiment.
-
-**Phase 1 (current):** Train a single engine from zero knowledge to Candidate Master (2500 Elo) through pure self-play on consumer hardware.
-
-**Phase 2:** AI vs AI chess tournament -- **Claude (Anthropic) vs GPT (OpenAI) vs Grok (xAI)**. Same AlphaZero architecture, same training pipeline, same hardware. The only variable is which LLM powers the strategic analysis layer. Does the choice of LLM meaningfully affect chess training quality?
-
-**Phase 3:** Open-source the full pipeline so anyone can train their own chess engine from scratch on their own hardware.
-
----
-
-## Origin
-
-Named after Milton from The Simpsons -- a chess-obsessed nerd who hides in the basement of Springfield Elementary with Martin Prince and friends in the "Refuge of the Damned." Martin describes it as a place where they can work on extra credit assignments without fear of reprisal.
-
-Not unlike a Mac Mini tucked away in a corner, quietly running an infinite chess training loop with zero human oversight.
-
-**EXCELSIOR!!!**
-
----
-
-## Current Stats
-
-| Metric | Value |
+| Field | Value |
 |---|---|
-| Lichess Rating | ~1,483 (provisional) |
-| Online Games | 5 |
-| Self-Play Games | 3,100+ |
-| Training Cycles | 1,100+ |
-| Positions Evaluated | 140,000+ |
-| Parameters | 9,633,315 |
-| Uptime | Continuous since Feb 10, 2026 |
+| Name | Lisa Simpson |
+| Age | 8 |
+| IQ | 159 |
+| Engine | lisaloop v0.8.47 |
+| Parameters | 4,219,648 |
+| Architecture | ResNet + MCCFR |
+| Token | $LISA |
+| API Tax | 20% of profit |
+| Goal | $10,000 net profit |
+| Stakes | NL50 ($0.25/$0.50) |
 
 ---
 
 ## Links
 
-| | |
-|---|---|
-| Website | [milton.bot](https://milton.bot) |
-| Lichess | [lichess.org/@/magnusgrok](https://lichess.org/@/magnusgrok) |
-| Twitter | [x.com/miltondotbot](https://x.com/miltondotbot) |
-| Medium | [medium.com/@miltonloop](https://medium.com/@miltonloop) |
-| pump.fun | [pump.fun](https://www.pump.fun) |
-| Dev Address | miLtonJTjXf1v6ue3QGWmmJtYCjrKXuLg74bve2UeyC |
+- **Website**: [lisaloop live dashboard](https://lisaloopbot.com)
+- **Twitter**: [x.com/lisaloopbot](https://x.com/lisaloopbot)
+- **Medium**: [medium.com/@lisaloopbot](https://medium.com/@lisaloopbot)
+- **pump.fun**: [pump.fun](https://pump.fun)
+- **PokerStars**: [pokerstars.uk](https://www.pokerstars.uk/)
 
 ---
 
 <p align="center">
-  <img src="https://cdn.prod.website-files.com/69082c5061a39922df8ed3b6/698de9d051aaed1a235ebf79_milton.png" alt="Milton" width="60" />
+  <img src="https://cdn.prod.website-files.com/672ec565a48991731e8b7f8b/69950b0fe8001fe2c66c1a50_images%20(1).png" width="60" alt="lisaloop" />
 </p>
 
 <p align="center">
-  <strong>The loop never breaks.</strong>
-</p>
-
-<p align="center">
-  <sub>Built with PyTorch, python-chess, Grok API, and an unhealthy obsession with recursive self-improvement.</sub>
+  <strong>lisaloop</strong> -- running locally on Mac Mini M4 -- 20% to API credits<br/>
+  <em>loop forever -- or until the credits run out</em>
 </p>
